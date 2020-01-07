@@ -1,9 +1,9 @@
 CC      := g++
-TOOLCHAIN := arm-linux-gnueabi-
+TOOLCHAIN := arm-kindlepw2-linux-gnueabi-
 PT      :=
 CFL     := -Wextra -std=c++11
-TPATH := /home/dmitry/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabi/bin/
-LPATH := /home/dmitry/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabi/
+TPATH := /home/dmitry/x-tools/arm-kindlepw2-linux-gnueabi/bin/
+LPATH := /home/dmitry/x-tools/arm-kindlepw2-linux-gnueabi/
 ARCH := -march=armv7 -mcpu=cortex-a9 --sysroot=$(LPATH)
 
 default:
