@@ -1,4 +1,4 @@
-CC      := g++
+CC      := gcc
 TOOLCHAIN := arm-kindlepw2-linux-gnueabi-
 PT      :=
 CFL     := -Wextra -std=c++11
@@ -12,7 +12,7 @@ default:
 
 pw3:
 	mkdir -p bin
-	$(TPATH)$(TOOLCHAIN)$(CC) $(CFL) $(ARCH) src/main.cpp src/blocks_game.cpp src/blocks_shape.cpp -o bin/blocks -lcurses -lrt -std=c++11 -Wall
+	$(TPATH)$(TOOLCHAIN)$(CC) --sysroot=$(LPATH) src/main.cpp src/blocks_game.cpp src/blocks_shape.cpp -o bin/blocks -lcurses -lrt -std=c++11 -Wall
 
 doc:
 	mkdir -p doc
